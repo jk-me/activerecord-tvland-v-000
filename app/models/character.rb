@@ -6,7 +6,4 @@ class Character < ActiveRecord::Base
     self.name + ' always says: ' + self.catchphrase
   end
 
-  def build_network(hash)
-    self.show.network.call_letters = hash[:call_letters]
-  end
 end
